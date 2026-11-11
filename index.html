@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#e6e6e6">
+<title>Imperio Joyas | Conectá con nosotros</title>
+<style>
+:root{--ink:#303030;--muted:#686868;--line:#d3d3d3}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:linear-gradient(145deg,#f4f4f4,#e4e4e4 58%,#d5d5d5);color:var(--ink);font-family:Arial,Helvetica,sans-serif;display:flex;justify-content:center;padding:30px 16px}
+main{width:min(100%,440px);text-align:center}.logo-wrap{margin:0 auto 16px;padding:20px 22px 12px;background:#171717;border-radius:16px;display:flex;justify-content:center;align-items:center;min-height:130px}.logo{display:block;width:min(100%,370px);height:auto;object-fit:contain}
+.sub{font-size:10px;letter-spacing:.2em;color:#666;margin:13px 0 22px}.rule{width:62px;height:1px;background:#929292;margin:0 auto 22px}h1{font-family:Georgia,serif;font-size:25px;font-weight:400;margin:0 0 8px}.intro{font-size:14px;line-height:1.6;color:var(--muted);margin:0 auto 25px;max-width:310px}
+.links{display:grid;gap:11px}.link,.wifi{display:flex;align-items:center;gap:14px;text-align:left;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 17px;box-shadow:0 4px 14px #0000000a;transition:transform .15s,border-color .15s}.link:hover,.wifi:hover{transform:translateY(-2px);border-color:#999}
+.symbol{width:39px;height:39px;border-radius:50%;background:#ededed;display:grid;place-items:center;color:#555;flex:none;font-size:20px}.label{font-size:15px;font-weight:600}.detail{font-size:12px;color:#777;margin-top:4px}.arrow{margin-left:auto;color:#888;font-size:22px}
+.wifi{margin-top:11px;width:100%;cursor:pointer}.wifi-info{flex:1}.password{display:none;margin-top:9px;padding:10px;background:#f0f0f0;border-radius:8px;font-size:13px;line-height:1.6}.wifi.open .password{display:block}.foot{font-size:10px;color:#777;letter-spacing:.12em;margin:28px 0 8px}
+</style></head><body><main>
+<div class="logo-wrap"><img class="logo" src="logo-imperio.png" alt="Imperio Joyas"></div><div class="sub">CONECTÁ CON NOSOTROS</div><div class="rule"></div>
+<h1>¡Estamos para ayudarte!</h1><p class="intro">Encontrá nuestras formas de contacto, conocé la tienda y visitanos.</p>
+<section class="links">
+<a class="link" href="https://wa.me/5493856984193" target="_blank" rel="noopener"><span class="symbol">☏</span><span><div class="label">WhatsApp</div><div class="detail">Escribinos directamente</div></span><span class="arrow">›</span></a>
+<a class="link" href="https://www.instagram.com/imperiojoyas_sde/" target="_blank" rel="noopener"><span class="symbol">◎</span><span><div class="label">Instagram</div><div class="detail">@imperiojoyas_sde</div></span><span class="arrow">›</span></a>
+<a class="link" href="https://maps.app.goo.gl/8Tat5WQfE73WhreXA" target="_blank" rel="noopener"><span class="symbol">⌖</span><span><div class="label">Cómo llegar</div><div class="detail">Encontrá nuestro local en el mapa</div></span><span class="arrow">›</span></a>
+<a class="link" href="https://imperiojoyastienda.empretienda.com.ar" target="_blank" rel="noopener"><span class="symbol">◇</span><span><div class="label">Tienda virtual</div><div class="detail">Comprá online</div></span><span class="arrow">›</span></a></section>
+<button class="wifi" id="wifi" type="button" aria-expanded="false"><span class="symbol">⌁</span><span class="wifi-info"><span class="label">WiFi del local</span><span class="detail">Tocá para ver cómo conectarte</span><span class="password">Red: Joyas<br>Contraseña: 121687joyas</span></span><span class="arrow">＋</span></button>
+<div class="foot">GRACIAS POR ELEGIR IMPERIO JOYAS ♡</div></main>
+<script>const b=document.getElementById('wifi');b.addEventListener('click',()=>{b.classList.toggle('open');b.setAttribute('aria-expanded',b.classList.contains('open'));b.querySelector('.arrow').textContent=b.classList.contains('open')?'−':'＋'});</script></body></html>
